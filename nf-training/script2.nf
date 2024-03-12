@@ -34,4 +34,5 @@ process INDEX {
 
 workflow {
     index_ch = INDEX(params.transcriptome_file)
+    index_ch.view()
 }
